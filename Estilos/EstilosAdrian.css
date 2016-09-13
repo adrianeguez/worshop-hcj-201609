@@ -24,6 +24,19 @@
     background-color: green;
 }
 
+.contenido {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(http://www.w3schools.com/cssref/border.png) 30 stretch;
+    -o-border-image: url(http://www.w3schools.com/cssref/border.png) 30 stretch;
+    border-image: url(http://www.w3schools.com/cssref/border.png) 30 stretch;
+    background-color: #eaeaea;
+}
+
+
+}
 
 
 
