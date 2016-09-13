@@ -46,3 +46,19 @@
 .texto-18 {
     font-size: 1.8em;
 }
+
+.col-amarillo {
+    background-color: yellow;
+}
+
+.col-rojo {
+    background-color: red;
+}
+
+.col-cafe {
+    background-color: brown;
+}
+
+.col-azul {
+    background-color: blue;
+}
