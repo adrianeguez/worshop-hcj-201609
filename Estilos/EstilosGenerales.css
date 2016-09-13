@@ -1,0 +1,36 @@
+html {
+    background-color: #4cb8c5;
+}
+
+h1 {
+    background-color: blue;
+    font-family: fantasy;
+}
+
+h2 {
+    background-color: green;
+    font-size: 15px;
+    font-size: 25px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    background-color: #419b4c;
+    font-size: 15px;
+    font-size: 25px;
+    border-radius: 45px;
+    border: 5px dotted violet;
+    padding: 20px;
+}
+
+
+h1 {
+    background-color: red;
+}
+
+head {
+    background-color: black;
+}
+
+body {
+    background-color: brown;
+}

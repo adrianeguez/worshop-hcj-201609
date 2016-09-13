@@ -1,0 +1,18 @@
+
+.bordes-verde {
+    background-color: green;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #419b4c;
+    border: 5px dotted violet;
+    padding: 20px;
+}
+
+.texto-grande {
+    font-size: 35px;
+}
+
+.img-150x150 {
+    width: 150px;
+    height: 150px;
+}
