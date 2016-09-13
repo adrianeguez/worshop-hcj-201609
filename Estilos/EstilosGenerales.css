@@ -1,13 +1,14 @@
-
-
 html {
     background-color: #4cb8c5;
 }
 
+
+/*
 h1 {
     background-color: blue;
     font-family: fantasy;
 }
+*/
 
 h2 {
     background-color: green;
@@ -25,9 +26,11 @@ h2 {
 }
 
 
+/*
 h1 {
     background-color: red;
 }
+*/
 
 head {
     background-color: black;
