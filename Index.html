@@ -80,6 +80,24 @@
 
     <!--    div.contenido -->
     <div class="contenido animated slideInLeft">
+        
+        <h1 class="text-center">Variables desde Javascript</h1>
+        
+        <div class="row">
+<!--            div.col-sm-3*4 -->
+            <div id="1" class="col-sm-3"></div>
+            <div class="col-sm-3 variable"></div>
+            <div class="col-sm-3"> 
+            <foo></foo>
+            </div>
+            <div id="2" class="col-sm-3"></div>
+        </div>
+        
+        <div class="row">
+            <div id="3" class="col-sm-6"></div>
+            <div id="4" class="col-sm-6"></div>
+            
+        </div>
 
         <div class="jumbotron">
             <div class="container">
@@ -104,9 +122,25 @@
 
         </div>
 
-
     </div>
+    
+    
+<!--    EN LA PARTE INFERIOR PONGO MIS ARCHIVOS JAVASCRIPT-->
 
+    
+    <script type="application/javascript">
+        
+        var numero = 1;
+        var decimal  = 1.2;
+        var nombreString = "Vicente Adrian";
+        var verdadero = true;
+        var falso = false;
+        var fecha = new Date();
+        
+        document.getElementById("demo").innerHTML = "Hello World!";
+        
+            
+    </script>
 
 
 
