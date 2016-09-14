@@ -80,26 +80,26 @@
 
     <!--    div.contenido -->
     <div class="contenido animated slideInLeft">
-        
+
         <h1 class="text-center">Variables desde Javascript</h1>
-        
+
         <div class="row">
-<!--            div.col-sm-3*4 -->
+            <!--            div.col-sm-3*4 -->
             <div id="1" class="col-sm-3"></div>
             <div class="col-sm-3">
                 <div class="variable"></div>
             </div>
-            <div class="col-sm-3"> 
+            <div class="col-sm-3">
                 <foo></foo>
             </div>
             <div id="2" class="col-sm-3"></div>
         </div>
-        
+
         <div class="row">
-<!--            div.col-sm-6*2 -->
+            <!--            div.col-sm-6*2 -->
             <div id="3" class="col-sm-6"></div>
             <div id="4" class="col-sm-6"></div>
-            
+
         </div>
 
         <div class="jumbotron">
@@ -126,66 +126,65 @@
         </div>
 
     </div>
-    
-    
-<!--    EN LA PARTE INFERIOR PONGO MIS ARCHIVOS JAVASCRIPT-->
 
-    
+
+    <!--    EN LA PARTE INFERIOR PONGO MIS ARCHIVOS JAVASCRIPT-->
+
+
     <script type="application/javascript">
-        
         var numero = 1;
-        console.log("El valor del numero es: ",numero);
-        
-        var decimal  = 1.2;
-        console.log("El valor del decimal es: ",decimal);
-        
+        console.log("El valor del numero es: ", numero);
+
+        var decimal = 1.2;
+        console.log("El valor del decimal es: ", decimal);
+
         var nombreString = "Vicente Adrian";
-        console.log("El valor del nombreString es: "+nombreString);
-        
+        console.log("El valor del nombreString es: " + nombreString);
+
         var verdadero = true;
-        console.log("El valor del verdadero es: ",verdadero);
-        
+        console.log("El valor del verdadero es: ", verdadero);
+
         var falso = false;
-        console.log("El valor del falso es: ",falso);
-        
+        console.log("El valor del falso es: ", falso);
+
         var fecha = new Date();
-        console.log("El valor del fecha es: ",fecha);
-        
+        console.log("El valor del fecha es: ", fecha);
+
         var elementoPorId1 = document.getElementById("1");
-        
-//        console.log("EL OBJETO DEL ELEMENTO ES: ")
-//        console.log(elementoPorId1)
-//        console.log("LA FUNCION TO STRING DEL OBJETO DEL ELEMENTO ES: ")
-//        console.log("AQUI ESTA:" + elementoPorId1)
-        
-        
-//        console.log("El valor del fecha es: ",(elementoPorId1));
-        
+
+        //        console.log("EL OBJETO DEL ELEMENTO ES: ")
+        //        console.log(elementoPorId1)
+        //        console.log("LA FUNCION TO STRING DEL OBJETO DEL ELEMENTO ES: ")
+        //        console.log("AQUI ESTA:" + elementoPorId1)
+
+
+        //        console.log("El valor del fecha es: ",(elementoPorId1));
+
         console.log(elementoPorId1);
-        
+
         var arregloClaseVariable = document.getElementsByClassName("variable");
-        
+
         console.log(arregloClaseVariable);
-        
-        
-        var arreglo1 = [1,2,3];
-        var arreglo2 = [1.1,1.2,1.3];
-        
+
+
+        var arreglo1 = [1, 2, 3];
+        var arreglo2 = [1.1, 1.2, 1.3];
+
         var arreglo3 = [
             "Adrian",
             "Eguez",
             "Sarzosa"
         ];
-        
-        var arreglo4 = [true,true,true];
-        var arreglo5 = [false,false,false];
-        
+
+        var arreglo4 = [true, true, true];
+        var arreglo5 = [false, false, false];
+
         var arreglo6 = [
             new Date(),
             new Date(),
             new Date()
         ];
-        
+
         var arreglo7 = [
             1,
             1.2,
@@ -203,7 +202,7 @@
                 "Eguez"
             ]
         ];
-        
+
         console.log(arreglo1);
         console.log(arreglo2);
         console.log(arreglo3);
@@ -211,54 +210,67 @@
         console.log(arreglo5);
         console.log(arreglo6);
         console.log(arreglo7);
-        
-        
-        for(var i = 0;i<arreglo7.length;i++){
-            console.log("Estamos en la posicion",i);
+
+
+        for (var i = 0; i < arreglo7.length; i++) {
+            console.log("Estamos en la posicion", i);
             console.log(arreglo7[i]);
         }
-        
+
         //  comentario en linea
-        
+
         /*
             comentario en bloque
         */
-        
-        var j=0;
-        while(j<arreglo5.length){
-            console.log("Estamos en la posicion",j);
+
+        var j = 0;
+        while (j < arreglo5.length) {
+            console.log("Estamos en la posicion", j);
             console.log(arreglo5[j]);
             j++;
         }
-        
+
         console.log("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
-        
-        
-        var funcionConNombre = function nombreDeMiFuncion (){
+
+
+        var funcionConNombre = function nombreDeMiFuncion() {
             console.log("Funcion Con Nombre");
         }
-        
-        var funcionSinNombre = function (){
+
+        var funcionSinNombre = function () {
             console.log("Funcion Sin Nombre");
         }
-        
+
         console.log("SIN PARENTESIS");
         console.log(funcionConNombre);
         console.log("CON PARENTESIS");
         console.log(funcionConNombre());
-        
-        
+
+
         console.log("SIN PARENTESIS");
         console.log(funcionSinNombre);
         console.log("CON PARENTESIS");
         console.log(funcionSinNombre());
+
+
+        function sumar2numeros(numero1, numero2) {
+            return numero1 + numero2;
+        }
+        console.log("Voy a sumar 2 y 4");
+        console.log(sumar2numeros(2,4)); // 6
+        console.log("Voy a sumar 7 y 4");
+        console.log(sumar2numeros(7,4)); // 11
+        
+        function decirNombreEnConsola(nombre) {
+            console.log(nombre);
+        }
+        
+        decirNombreEnConsola("Vicente"); // Vicente
+        decirNombreEnConsola("Adrian"); // Adrian
         
         
         
         
-        
-        
-            
     </script>
 
 
