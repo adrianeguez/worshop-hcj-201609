@@ -257,17 +257,108 @@
             return numero1 + numero2;
         }
         console.log("Voy a sumar 2 y 4");
-        console.log(sumar2numeros(2,4)); // 6
+        console.log(sumar2numeros(2, 4)); // 6
         console.log("Voy a sumar 7 y 4");
-        console.log(sumar2numeros(7,4)); // 11
-        
+        console.log(sumar2numeros(7, 4)); // 11
+
         function decirNombreEnConsola(nombre) {
             console.log(nombre);
         }
-        
+
         decirNombreEnConsola("Vicente"); // Vicente
         decirNombreEnConsola("Adrian"); // Adrian
         
+        
+        
+        
+        
+        var objetoVacio = {};
+        console.log(objetoVacio);
+        
+        var objeto = {
+            nombre:"Adrian",
+            edad:27,
+            fechaNacimiento:new Date('1989-06-10'),
+            peso:90.5,
+            mascotas:["cachetes","perla","bj","oso"],
+            casado:false,
+            ingeniero:true,
+            presentacion:function(){
+                
+                var infoCard = 
+                "Mi nombre es: "+this.nombre+"\n"
+                +"Mi edad es: "+objeto.edad+"\n"
+                +"Mi fecha de Nacimiento es: "+this.fechaNacimiento.toTimeString+"\n"
+                +"Mi peso es: "+this.peso+"\n"
+                +"Tengo "+this.mascotas.length+" mascotas"+"\n"
+                +"Casado: "+this.casado+"\n"
+                +"Ingeniero: "+this.ingeniero+"\n"
+                            
+                return infoCard;
+                
+            }
+        };
+
+        console.log();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //topicos avanzados no descomentar
+
+        console.log("Debo de ejecutarme primero")
+
+        setTimeout(
+
+            function () {
+
+                console.log("Debo de ejecutarme segundo pero NO")
+
+            }, 3000);
+
+        console.log("Debo de ejecutarme tercero")
+
+//        for (var i = 0; i < 5; ) {
+//
+//            setTimeout(
+//
+//                function () {
+//
+//                    console.log("El valor de i es:",i);
+//                    i++;
+//
+//                }, 3000);
+//
+//        }
+        
+        var i = 0;
+        
+//        while(i < 5){
+//            
+//            setTimeout(
+//
+//                function () {
+//
+//                    console.log("El valor de i es:",i);
+//                    i++;
+//
+//                }, 3000);
+//            
+//        }
         
         
         
@@ -276,6 +367,11 @@
 
 
 </body>
+
+
+
+
+
 
 
 
