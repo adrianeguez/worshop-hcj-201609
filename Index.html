@@ -81,26 +81,38 @@
     <!--    div.contenido -->
     <div class="contenido animated slideInLeft">
 
-        <h1 class="text-center">Variables desde Javascript</h1>
+        <h1 class="text-center">Usando Javascript</h1>
+        
+<!--        div.row>div.col-sm-12-->
+       
+       <div class="text-center">
+          
+          <div class="row">
+            <div id="infocard" class="col-sm-12 borde-negro"></div>
+        </div>
 
         <div class="row">
             <!--            div.col-sm-3*4 -->
-            <div id="1" class="col-sm-3"></div>
-            <div class="col-sm-3">
-                <div class="variable"></div>
+            <div id="1" class="col-sm-3 borde-negro"></div>
+            
+            <div class="col-sm-3 borde-negro">
+                <div class="miclase"></div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 borde-negro">
                 <foo></foo>
             </div>
-            <div id="2" class="col-sm-3"></div>
+            <div id="2" class="col-sm-3 borde-negro"></div>
         </div>
 
         <div class="row">
             <!--            div.col-sm-6*2 -->
-            <div id="3" class="col-sm-6"></div>
-            <div id="4" class="col-sm-6"></div>
+            <div id="3" class="col-sm-6 borde-negro"></div>
+            <div id="4" class="col-sm-6 borde-negro"></div>
 
         </div>
+           
+       </div>
+        
 
         <div class="jumbotron">
             <div class="container">
@@ -134,23 +146,45 @@
     <script type="application/javascript">
         var numero = 1;
         console.log("El valor del numero es: ", numero);
+        
+        document.getElementById("1").innerHTML = numero;
+        
+        
 
         var decimal = 1.2;
         console.log("El valor del decimal es: ", decimal);
+        
+        document.getElementsByClassName("miclase")[0].innerHTML = decimal;
 
         var nombreString = "Vicente Adrian";
         console.log("El valor del nombreString es: " + nombreString);
+        
+        document.getElementsByTagName("foo")[0].innerHTML = nombreString;
+        
+        
 
         var verdadero = true;
         console.log("El valor del verdadero es: ", verdadero);
+        document.getElementById("2").innerHTML = verdadero;
 
         var falso = false;
         console.log("El valor del falso es: ", falso);
+        document.getElementById("3").innerHTML = falso;
 
         var fecha = new Date();
         console.log("El valor del fecha es: ", fecha);
+        document.getElementById("4").innerHTML = fecha;
 
-        var elementoPorId1 = document.getElementById("1");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         //        console.log("EL OBJETO DEL ELEMENTO ES: ")
         //        console.log(elementoPorId1)
@@ -160,11 +194,8 @@
 
         //        console.log("El valor del fecha es: ",(elementoPorId1));
 
-        console.log(elementoPorId1);
 
-        var arregloClaseVariable = document.getElementsByClassName("variable");
-
-        console.log(arregloClaseVariable);
+//        console.log(arregloClaseVariable);
 
 
         var arreglo1 = [1, 2, 3];
@@ -301,7 +332,7 @@
 
         console.log(objeto.presentacion());
         
-        
+        document.getElementById("infocard").innerHTML = objeto.presentacion();
         
         
         
